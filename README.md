@@ -39,11 +39,10 @@ This way you reduce the number of requests and only return result for the latest
 For Eg: User may type "Co"..."Coff"..."Coffee". You'd only want to shoot a request when the user has typed the whole word instead of sending a request for every input.
 
 ### Tech Stack
-<img src="/previews/transition.gif" align="right" width="20%"/>
 
 - [Kotlin](https://kotlinlang.org/)  
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)  
-- [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
+- [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/)
   
   
 ### Roadmap (Features to be added )
