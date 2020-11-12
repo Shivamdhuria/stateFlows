@@ -1,5 +1,6 @@
+# State Flows
 
-<p align="center">
+<p align="start">
 An Android Application written purely in Kotlin exploring various usages of Flows and Coroutines in a Real World App.</p>
 
 # Medium Articles 
