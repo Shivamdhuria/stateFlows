@@ -11,9 +11,9 @@ Follow me on [Medium](https://medium.com/@shivamdhuria) for latest articles.
 |Form Vaidation using Mutable State Flows|pending|
 |Search Listeners for Latest Query using Debounce|pending|
 
-# Cases
+## Cases
 
-## Form Validation
+### Form Validation
 <img src="/snapshot/validation.png" align="right" width="20%"/>
 The Screen contains three input fields, the **Submit** button is only enabled once all the 3 fields are properly filled.
 
@@ -30,7 +30,7 @@ Once all these fields are properly filled only then the **Submit** button is ena
 
 
 
-## Smart Listeners for Shooting requests
+### Smart Listeners for Shooting requests
 <img src="/snapshot/deb.png" align="right" width="20%"/>
 
 For this we use an example of a search query. You don't want to shoot a request whenever the text is edited but wait untill a couple of seconds before shooting a netwiork request.
@@ -38,7 +38,7 @@ For this we use an example of a search query. You don't want to shoot a request 
 This way you reduce the number of requests and only return result for the latest text query.
 For Eg: User may type "Co"..."Coff"..."Coffee". You'd only want to shoot a request when the user has typed the whole word instead of sending a request for every input.
 
-## Tech Stack
+### Tech Stack
 <img src="/previews/transition.gif" align="right" width="20%"/>
 
 - [Kotlin](https://kotlinlang.org/)  
@@ -46,7 +46,7 @@ For Eg: User may type "Co"..."Coff"..."Coffee". You'd only want to shoot a reque
 - [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
   
   
-## Roadmap (Features to be added )
+### Roadmap (Features to be added )
 - Exponential Backoff for Network Requests
   
   
