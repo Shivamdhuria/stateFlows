@@ -14,6 +14,7 @@ Follow me on [Medium](https://medium.com/@shivamdhuria) for latest articles.
 # Cases
 
 ## Form Validation
+<img src="/snapshot/validation.png" align="right" width="20%"/>
 The Screen contains three input fields, the **Submit** button is only enabled once all the 3 fields are properly filled.
 
  - First Name must contain only alphabets.
@@ -21,8 +22,17 @@ The Screen contains three input fields, the **Submit** button is only enabled on
  - User Id must contain an underscore( _ )
 
 Once all these fields are properly filled only then the **Submit** button is enabled. The Submit button disables again if any of the fields are edited and the conditions are not met.
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+
 
 ## Smart Listeners for Shooting requests
+<img src="/snapshot/deb.png" align="right" width="20%"/>
+
 For this we use an example of a search query. You don't want to shoot a request whenever the text is edited but wait untill a couple of seconds before shooting a netwiork request.
 
 This way you reduce the number of requests and only return result for the latest text query.
