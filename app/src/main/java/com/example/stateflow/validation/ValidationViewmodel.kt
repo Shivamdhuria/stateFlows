@@ -32,5 +32,4 @@ class ValidationViewmodel : ViewModel() {
         val isUserIdCorrect = userId.contains("_")
         return@combine result and isUserIdCorrect
     }
-
 }
