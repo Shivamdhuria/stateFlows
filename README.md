@@ -8,8 +8,8 @@ Follow me on [Medium](https://medium.com/@shivamdhuria) for latest articles.
 
   | Medium Article  | Github Branch|
 | ------ | ------ |
-|Form Vaidation using Mutable State Flows|pending|
-|Search Listeners for Latest Query using Debounce|pending|
+|Form Validation using Mutable State Flows|pending|
+|Smart Listener for Shooting requests|pending|
 
 ## Cases
 
@@ -30,7 +30,7 @@ Once all these fields are properly filled only then the **Submit** button is ena
 
 
 
-### Smart Listeners for Shooting requests
+### Smart Listener for Shooting requests
 <img src="/snapshot/deb.png" align="right" width="20%"/>
 
 For this we use an example of a search query. You don't want to shoot a request whenever the text is edited but wait untill a couple of seconds before shooting a netwiork request.
@@ -50,7 +50,7 @@ For Eg: User may type "Co"..."Coff"..."Coffee". You'd only want to shoot a reque
   
   
 ### Find this repository useful? :heart:
-Support it by joining starring this repository. :star: <br>
+Support it by starring this repository. :star: <br>
 And follow me on [Medium](https://medium.com/@shivamdhuria) and [Github](https://github.com/Shivamdhuria?tab=repositories)
   
   
