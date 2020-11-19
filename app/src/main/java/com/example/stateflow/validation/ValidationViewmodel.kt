@@ -23,13 +23,11 @@ class ValidationViewmodel : ViewModel() {
         _userID.value = id
     }
 
-    val isSubmitEnabled: Flow<Boolean> = _firstName.combine(_password) { a, b ->
-        val regexString = "[a-zA-Z]+"
-        val isNameCorrect = a.matches(regexString.toRegex())
-        val isPasswordCorrect = b.length > 8
-        return@combine isNameCorrect and isPasswordCorrect
-    }.combine(_userID) { result, userId ->
-        val isUserIdCorrect = userId.contains("_")
-        return@combine result and isUserIdCorrect
-    }
+    val isSubmitEnabled: Flow<Boolean> = combine(_firstName, _password, _userID) { firstName, password, userId ->
+            val regexString = "[a-zA-Z]+"
+            val isNameCorrect = firstName.matches(regexString.toRegex())
+            val isPasswordCorrect = password.length > 8
+            val isUserIdCorrect = userId.contains("_")
+            return@combine isNameCorrect and isPasswordCorrect and isUserIdCorrect
+        }
 }
