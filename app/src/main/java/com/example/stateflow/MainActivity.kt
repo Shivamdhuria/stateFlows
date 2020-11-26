@@ -2,6 +2,7 @@ package com.example.stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.stateflow.backoff.BackOffActivity
 import com.example.stateflow.debounce.DebounceActivity
 import com.example.stateflow.validation.ValidationActivity
 import com.example.stateflow.validation.ValidationActivity.Companion.invoke
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         }
         debounce.setOnClickListener {
             startActivity(DebounceActivity.invoke(this))
+        }
+        backOff.setOnClickListener {
+            startActivity(BackOffActivity.invoke(this))
         }
     }
 }
