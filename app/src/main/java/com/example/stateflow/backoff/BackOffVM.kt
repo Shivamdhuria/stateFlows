@@ -3,13 +3,11 @@ package com.example.stateflow.backoff
 import androidx.lifecycle.ViewModel
 import com.example.stateflow.backoff.data.ResultWrapper
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 import java.io.IOException
 
-@ExperimentalCoroutinesApi
-class BackOffViewModel : ViewModel() {
+class BackOffVM : ViewModel() {
 
     val liveDateFetch = getDogImages().flowOn(Dispatchers.IO)
         .retryWhen { cause, attempt ->

@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
-import android.view.View
-import android.view.View.*
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -24,13 +24,13 @@ class BackOffActivity : AppCompatActivity() {
     }
 
     private val adapter by lazy(NONE) { RecyclerAdapter() }
-    private lateinit var viewModel: BackOffViewModel
+    private lateinit var viewModel: BackOffVM
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_back_off)
-        viewModel = ViewModelProvider(this).get(BackOffViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(BackOffVM::class.java)
         collectFlows()
         recycler.adapter = adapter
     }
@@ -44,7 +44,8 @@ class BackOffActivity : AppCompatActivity() {
                         errorText.visibility = VISIBLE
                         errorImage.visibility = VISIBLE
                         view_timer.visibility = VISIBLE
-                        it.retryTime?.let { it1 -> resetCountDown(it1) } ?: run { view_timer.visibility = INVISIBLE }
+                        it.retryTime?.let { it1 -> resetCountDown(it1) }
+                            ?: run { view_timer.visibility = INVISIBLE }
                     }
                     is ResultWrapper.Success<*> -> {
                         view_timer.visibility = INVISIBLE

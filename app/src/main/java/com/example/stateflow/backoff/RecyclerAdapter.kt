@@ -11,8 +11,7 @@ import com.example.stateflow.util.ImageLoader
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_dog.view.*
 
-public class RecyclerAdapter() :
-    ListAdapter<String, RecyclerAdapter.StringViewHolder>(UserDataAdapterListDiff()) {
+public class RecyclerAdapter() : ListAdapter<String, RecyclerAdapter.StringViewHolder>(UserDataAdapterListDiff()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StringViewHolder =
         StringViewHolder(parent.inflate(R.layout.item_dog))
