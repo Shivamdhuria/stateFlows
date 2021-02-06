@@ -10,7 +10,7 @@ Follow me on [Medium](https://medium.com/@shivamdhuria) for latest articles.
 | ------ |
 |[Form Validation using Mutable State Flows](https://levelup.gitconnected.com/using-flows-for-form-validation-in-android-79016b00c079)|
 |[Smart Listener for Shooting requests](https://levelup.gitconnected.com/smart-text-listeners-using-flows-on-android-a37dd5444216)|
-|[Backoff and Retry Strategy]pending](https://proandroiddev.com/backoff-and-retry-strategy-using-flows-in-android-ed2478d23492)|
+|[Backoff and Retry Strategy](https://proandroiddev.com/backoff-and-retry-strategy-using-flows-in-android-ed2478d23492)|
 
 
 ## Cases
