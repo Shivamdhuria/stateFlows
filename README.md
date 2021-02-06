@@ -6,10 +6,12 @@ An Android Application written purely in Kotlin exploring various usages of Flow
 # Medium Articles 
 Follow me on [Medium](https://medium.com/@shivamdhuria) for latest articles.
 
-  | Medium Article  | Github Branch|
-| ------ | ------ |
-|Form Validation using Mutable State Flows|pending|
-|Smart Listener for Shooting requests|pending|
+  | Medium Article  |
+| ------ |
+|[Form Validation using Mutable State Flows](https://levelup.gitconnected.com/using-flows-for-form-validation-in-android-79016b00c079)|
+|[Smart Listener for Shooting requests](https://levelup.gitconnected.com/smart-text-listeners-using-flows-on-android-a37dd5444216)|
+|[Backoff and Retry Strategy]pending](https://proandroiddev.com/backoff-and-retry-strategy-using-flows-in-android-ed2478d23492)|
+
 
 ## Cases
 
